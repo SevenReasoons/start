@@ -1,5 +1,5 @@
 # ==============================================================================
-# SEVEN REASOONS UNIVERSAL PROJECT STARTER (reasoons-star / reasoons-start)
+# SEVEN REASOONS UNIVERSAL PROJECT STARTER (reasoons-start)
 # Clona SevenReasoons/start, aprovisiona Rol + Arquetipo, instala dependencias
 # y configura extensiones de Antigravity IDE / VS Code en una carpeta nueva.
 # ==============================================================================
@@ -17,7 +17,7 @@ $ErrorActionPreference = "Stop"
 
 Write-Host ""
 Write-Host "================================================================================" -ForegroundColor Cyan
-Write-Host " [*] SEVEN REASOONS PROJECT STARTER (reasoons-star)" -ForegroundColor Yellow
+Write-Host " [*] SEVEN REASOONS PROJECT STARTER (reasoons-start)" -ForegroundColor Yellow
 Write-Host "     Arranque interactivo llave en mano de proyectos en carpeta independiente" -ForegroundColor White
 Write-Host "================================================================================" -ForegroundColor Cyan
 Write-Host ""

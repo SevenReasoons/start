@@ -1,17 +1,17 @@
-﻿---
+---
 name: reasoons-start
 description: >-
-  [⭐ RECOMENDADO - NUEVO PROYECTO (Alias de reasoons-star)] Inicia por defecto un proyecto
-  llave en mano en una CARPETA NUEVA e INDEPENDIENTE (fuera del workspace actual) clonando
-  SevenReasoons/start (o plantilla local), preguntando nombre, rol (1-6) y arquetipo (1-18),
-  aprovisionando arquitectura, instalando dependencias (npm install) y extensiones de IDE.
+  [⭐ RECOMENDADO - NUEVO PROYECTO] Inicia por defecto un proyecto llave en mano en una
+  CARPETA NUEVA e INDEPENDIENTE (fuera del workspace actual) clonando SevenReasoons/start
+  (o plantilla local), preguntando nombre, rol (1-6) y arquetipo (1-18), aprovisionando
+  la arquitectura, instalando dependencias (npm install) y configurando extensiones de IDE.
 license: Apache-2.0
 metadata:
   author: Seven Reasoons
   version: 1.0.0
 ---
 
-# ⭐ Skill: Seven Reasoons Project Starter (`reasoons-start` / `reasoons-star`)
+# ⭐ Skill: Seven Reasoons Project Starter (`reasoons-start`)
 
 > **Propósito:** Ser la vía más rápida, sencilla y automatizada para arrancar un proyecto en el ecosistema Seven Reasoons. En un solo flujo interactivo clona el repositorio base, solicita los datos esenciales, crea una carpeta limpia independiente, aprovisiona el arquetipo, instala dependencias y configura las extensiones de desarrollo en Google Antigravity IDE.
 

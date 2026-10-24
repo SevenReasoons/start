@@ -12,7 +12,7 @@
 │
 ├── 🚀 DÍA 0: EL INICIALIZADOR INTERACTIVO
 │   └── 00_project_initializer.md      # Catálogo interactivo de 18 arquetipos y estructuras de carpetas ideales
-│                                      # Operado mediante reasoons-star y scripts/start-project.ps1 / .sh
+│                                      # Operado mediante reasoons-start y scripts/start-project.ps1 / .sh
 │
 ├── 🧠 CAPÍTULO I: EL NÚCLEO INVARIABLE (Obligatorio en el 100% de proyectos)
 │   ├── 01_core_philosophy.md          # 5 Axiomas: API-First Radical, i18n Bilingüe (ES/EN), Zod, Topologías
@@ -141,7 +141,7 @@ El repositorio incluye la infraestructura física lista para arrancar proyectos 
 Todas las habilidades y automatizaciones del holding se encuentran estandarizadas bajo el prefijo unificado `reasoons-*` en [`.agents/skills/`](../skills/):
 
 - **Arrancadores:**
-  - **`reasoons-star`** (o `reasoons-start`): Arranque llave en mano de proyectos en carpeta nueva e independiente.
+  - **`reasoons-start`**: Arranque llave en mano de proyectos en carpeta nueva e independiente.
   - **`reasoons-project-init`**: Aprovisionamiento dentro del repositorio activo.
 - **Documentación:**
   - **`reasoons-documentar`**: Generador de documentación oficial ruta por ruta entregable al cliente.

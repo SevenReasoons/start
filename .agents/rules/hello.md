@@ -61,7 +61,7 @@ description: Regla maestra obligatoria de Antigravity IDE, roles de equipo, cat�
 
 6. **Skills Oficiales de Ingeniería y Prototipado (.agents/skills/):**
    Todas las habilidades del ecosistema comparten el prefijo unificado `reasoons-*` y numeración ordenada para autocompletado y jerarquía en Antigravity IDE:
-   - **Inicializadores:** `reasoons-star` (o `reasoons-start`), `reasoons-project-init`.
+   - **Inicializadores:** `reasoons-start`, `reasoons-project-init`.
    - **Documentación:** `reasoons-documentar` (genera manual funcional entregable al cliente ruta por ruta).
    - **Interfaz de Usuario (UI):**
      - `reasoons-ui-pure`: Prototipos de venta interactivos (<24h, Tema Claro, Regla de Oro del degradado en bordes de 2px, CTA y WhatsApp).

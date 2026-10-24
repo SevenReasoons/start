@@ -15,9 +15,9 @@
 
 ---
 
-## 🌟 La Vía Rápida: `reasoons-star` (Arranque Llave en Mano en 1 Paso)
+## 🌟 La Vía Rápida: `reasoons-start` (Arranque Llave en Mano en 1 Paso)
 
-La forma más rápida y moderna de crear un proyecto nuevo es usando la skill **`reasoons-star`** en Antigravity IDE o ejecutando el script oficial:
+La forma más rápida y moderna de crear un proyecto nuevo es usando la skill **`reasoons-start`** en Antigravity IDE o ejecutando el script oficial:
 
 ```powershell
 # En Windows (PowerShell):

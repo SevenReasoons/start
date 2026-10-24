@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# 🌟 Seven Reasoons Universal Project Starter (reasoons-star / reasoons-start)
+# 🌟 Seven Reasoons Universal Project Starter (reasoons-start)
 # Bash (Linux / Mac / WSL2)
 # ==============================================================================
 set -e
@@ -12,7 +12,7 @@ DESTINATION_PATH=${4:-""}
 SOURCE_REPO="https://github.com/SevenReasoons/start.git"
 
 echo -e "\n================================================================================"
-echo -e " ⭐ SEVEN REASOONS PROJECT STARTER (reasoons-star)"
+echo -e " ⭐ SEVEN REASOONS PROJECT STARTER (reasoons-start)"
 echo -e "    Arranque interactivo llave en mano de proyectos en carpeta independiente"
 echo -e "================================================================================\n"
 

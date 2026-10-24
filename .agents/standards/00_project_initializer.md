@@ -125,7 +125,7 @@ components/
 
 ## 6. Instrucción de Aprovisionamiento Automático
 
-### Opción A (Recomendada): Arranque en Carpeta Nueva e Independiente (`reasoons-star`)
+### Opción A (Recomendada): Arranque en Carpeta Nueva e Independiente (`reasoons-start`)
 La forma más ágil y limpia. Clona la base oficial, inicializa Git fresco, aprovisiona el arquetipo, instala dependencias y configura extensiones de IDE:
 * **En Windows (PowerShell):**
   ```powershell
