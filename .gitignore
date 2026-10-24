@@ -62,7 +62,9 @@ ehthumbs.db
 *.sublime-project
 *.sublime-workspace
 
-# Archivos Temporales y Scratch
+# Archivos Temporales, Comprimidos y Scratch
 scratch/
 *.tmp
 *.temp
+*.zip
+*.tar.gz
