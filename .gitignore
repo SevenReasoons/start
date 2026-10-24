@@ -1,0 +1,68 @@
+# ==============================================================================
+# 🛡️ Seven Reasons Universal .gitignore (Next.js + Supabase + Antigravity)
+# ==============================================================================
+
+# Dependencias
+node_modules/
+.pnpm-store/
+.yarn/
+vendor/
+
+# Compilación y Salidas
+.next/
+out/
+build/
+dist/
+.turbo/
+
+# Variables de Entorno y Secretos (REGLA INNEGOCIABLE: NUNCA SUBIR A GIT)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+
+# Excepción explícita para la plantilla de entorno
+!.env.example
+
+# Supabase Local Cache & State
+supabase/.temp/
+supabase/.branches/
+
+# Registros y Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Cobertura y Pruebas
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Basura de Sistemas Operativos
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# IDEs y Editores Locales
+# (Preservamos .vscode/settings.json y .vscode/extensions.json para Antigravity)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos Temporales y Scratch
+scratch/
+*.tmp
+*.temp

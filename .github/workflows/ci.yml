@@ -1,0 +1,87 @@
+name: "CI/CD Quality Gate"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: "Lint, Typecheck, Unit Tests & Build"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js (v20 LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: 1. Lint & Code Style Check
+        run: npm run lint
+        continue-on-error: false
+
+      - name: 2. Type Check (tsc --noEmit)
+        run: npm run typecheck
+        continue-on-error: false
+
+      - name: 3. Unit & Integration Tests (Vitest)
+        run: npm run test:unit -- --run
+        env:
+          NODE_ENV: test
+
+      - name: 4. Build Validation
+        run: npm run build
+        env:
+          NEXT_PUBLIC_APP_URL: "https://preview.app.com"
+          DATABASE_URL: "postgresql://postgres:postgres@localhost:54322/postgres"
+
+  e2e-gate:
+    name: "Critical End-to-End Tests (Playwright)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: [quality-gate]
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (v20 LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright Tests
+        run: npm run test:e2e
+        env:
+          CI: true
+
+      - name: Upload Playwright Artifacts on Failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
