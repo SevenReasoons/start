@@ -15,9 +15,32 @@
 
 ---
 
-## 🏁 Inicio Rápido en 4 Pasos (Day 0 Onboarding)
+## 🌟 La Vía Rápida: `reasoons-star` (Arranque Llave en Mano en 1 Paso)
 
-Cualquier persona del equipo arranca un proyecto nuevo en menos de 2 minutos siguiendo estos pasos:
+La forma más rápida y moderna de crear un proyecto nuevo es usando la skill **`reasoons-star`** en Antigravity IDE o ejecutando el script oficial:
+
+```powershell
+# En Windows (PowerShell):
+powershell -ExecutionPolicy Bypass -File .\scripts\start-project.ps1
+
+# En Mac / Linux / WSL2 (Bash):
+./scripts/start-project.sh
+```
+
+**¿Qué hace automáticamente?**
+1. Pregunta el nombre del proyecto, rol (1-6) y arquetipo (1-18).
+2. Clona el repositorio oficial en una **carpeta nueva e independiente**.
+3. Reinicializa Git (`git init`) con rama limpia `main`.
+4. Aprovisiona la arquitectura exacta (Frontend Puro en <24h para Awareness o Next.js Atómico para Maker+).
+5. Configura extensiones oficiales de Antigravity IDE en `.vscode/extensions.json` (Tailwind, Supabase, Vercel, ESLint, Prettier).
+6. Instala dependencias (`npm install`) automáticamente.
+7. Ejecuta el diagnóstico de salud (`doctor`) y te entrega el proyecto listo para trabajar.
+
+---
+
+## 🏁 Inicio Manual en 4 Pasos (Day 0 Onboarding)
+
+Si prefieres inicializar manualmente dentro del repositorio actual, sigue estos pasos:
 
 ### 1. Clonar el Repositorio Starter
 ```bash
@@ -64,7 +87,7 @@ El Agente de Antigravity adapta su profundidad técnica, lenguaje y asistencia s
 | Nivel | Rol | Función Principal | Especialidad / Acompañamiento del Agente |
 |:---:|---|---|---|
 | **1** | **🎯 Awareness** | **Ventas, Discovery & Prototipado (<24h)** | **Modo Prototipo Frontend:** Genera prototipos hiper-estéticos de cualquiera de los 18 arquetipos con datos simulados (`mock-data.js`). Cero backend ni Docker, listo para proyectar y vender en <24h. |
-| **2** | **🛠️ Maker** | **Fullstack Junior** | **Familia 1 (Captación):** Next.js App Router y guía paso a paso para modelar tablas y esquemas Zod en Supabase. |
+| **2** | **🛠️ Maker** | **Frontend Profesional & Atómico** | **Familias 1 & 2 (Captación & Comercio Básico):** Next.js App Router con **Atomic Design** (`atoms/`, `molecules/`, `organisms/`, `templates/`), componentes desacoplados para handoff fluido a Senior, y conexión de backend sencillo (CRUDs en Supabase). |
 | **3** | **💼 Consultant** | **Fullstack Intermedio** | **Familias 2 y 3 (Comercio & Contenido):** Creación de APIs robustas (RFC 7807), pasarelas Stripe, webhooks y LMS. |
 | **4** | **🏛️ Architect** | **Ingeniero Senior** | **Familia 4 (Empresa & Multi-Tenant):** Monorepos Turborepo, subdominios dinámicos y orquestación de Agentes de IA. |
 | **5** | **🛡️ Expert** | **Ingeniero Deep-Tech** | **Familia 5 (IA, IoT & BaaS):** Ciberseguridad bancaria (SHI, WebCrypto E2EE, Merkle) y rendimiento extremo (60 FPS). |
@@ -104,23 +127,38 @@ El Agente de Antigravity adapta su profundidad técnica, lenguaje y asistencia s
 
 ---
 
-## 🗺️ Mapa Normativo del Kit de Reglas
+## 🗺️ Mapa Normativo de Estándares de Ingeniería
 
-Toda la documentación técnica profunda se encuentra en la carpeta [`rules/`](./rules/):
+Toda la documentación técnica profunda y los 15 manuales del holding se encuentran centralizados en [`.agents/standards/`](file:///.agents/standards/):
 
-- [`rules/00_project_initializer.md`](./rules/00_project_initializer.md): Catálogo de arquetipos, roles y estructuras ideales.
-- [`rules/01_core_philosophy.md`](./rules/01_core_philosophy.md): 5 Axiomas, API-First, i18n bilingüe y topologías.
-- [`rules/02_system_hygiene_and_env.md`](./rules/02_system_hygiene_and_env.md): Mandato de Antigravity IDE, `.vscode/`, `doctor` y variables de entorno Zod.
-- [`rules/03_naming_and_git_flow.md`](./rules/03_naming_and_git_flow.md): Convenciones de nomenclatura y Conventional Commits.
-- [`rules/04_api_and_error_contract.md`](./rules/04_api_and_error_contract.md): Contrato unificado RFC 7807 e Idempotencia.
-- [`rules/05_observability_and_logs.md`](./rules/05_observability_and_logs.md): Logs estructurados JSON y health checks.
-- [`rules/06_devops_ci_cd_and_qa.md`](./rules/06_devops_ci_cd_and_qa.md): Pipeline de CI/CD, Vitest y Playwright.
-- [`rules/07_frontend_and_mobile_first.md`](./rules/07_frontend_and_mobile_first.md): Mobile-First, touch targets y 60 FPS.
-- [`rules/08_ui_system_and_a11y.md`](./rules/08_ui_system_and_a11y.md): Presets de diseño, Frosted Glass y accesibilidad.
-- [`rules/09_backend_and_database.md`](./rules/09_backend_and_database.md): Supabase PostgreSQL, RLS y migraciones.
-- [`rules/10_ai_first_and_generative_ui.md`](./rules/10_ai_first_and_generative_ui.md): Vercel AI SDK y Generative UI.
-- [`rules/11_multi_tenant_engine.md`](./rules/11_multi_tenant_engine.md): Enrutamiento dinámico y subdominios.
-- [`rules/12_high_custody_security.md`](./rules/12_high_custody_security.md): Seguridad de alta custodia (SHI, WebCrypto E2EE, Merkle).
+- [`.agents/standards/00_project_initializer.md`](./.agents/standards/00_project_initializer.md): Catálogo de arquetipos, roles y estructuras ideales.
+- [`.agents/standards/01_core_philosophy.md`](./.agents/standards/01_core_philosophy.md): 5 Axiomas, API-First, i18n bilingüe y topologías.
+- [`.agents/standards/02_system_hygiene_and_env.md`](./.agents/standards/02_system_hygiene_and_env.md): Mandato de Antigravity IDE, `.vscode/`, `doctor` y variables de entorno Zod.
+- [`.agents/standards/03_naming_and_git_flow.md`](./.agents/standards/03_naming_and_git_flow.md): Convenciones de nomenclatura y Conventional Commits.
+- [`.agents/standards/04_api_and_error_contract.md`](./.agents/standards/04_api_and_error_contract.md): Contrato unificado RFC 7807 e Idempotencia.
+- [`.agents/standards/05_observability_and_logs.md`](./.agents/standards/05_observability_and_logs.md): Logs estructurados JSON y health checks.
+- [`.agents/standards/06_devops_ci_cd_and_qa.md`](./.agents/standards/06_devops_ci_cd_and_qa.md): Pipeline de CI/CD, Vitest y Playwright.
+- [`.agents/standards/07_frontend_and_mobile_first.md`](./.agents/standards/07_frontend_and_mobile_first.md): Mobile-First, touch targets y 60 FPS.
+- [`.agents/standards/08_ui_system_and_a11y.md`](./.agents/standards/08_ui_system_and_a11y.md): Presets de diseño, Frosted Glass y accesibilidad.
+- [`.agents/standards/09_backend_and_database.md`](./.agents/standards/09_backend_and_database.md): Supabase PostgreSQL, RLS y migraciones.
+- [`.agents/standards/10_ai_first_and_generative_ui.md`](./.agents/standards/10_ai_first_and_generative_ui.md): Vercel AI SDK y Generative UI.
+- [`.agents/standards/11_multi_tenant_engine.md`](./.agents/standards/11_multi_tenant_engine.md): Enrutamiento dinámico y subdominios.
+- [`.agents/standards/12_high_custody_security.md`](./.agents/standards/12_high_custody_security.md): Seguridad de alta custodia (SHI, WebCrypto E2EE, Merkle).
+- [`.agents/standards/13_visual_identity_manual.md`](./.agents/standards/13_visual_identity_manual.md): Manual de Identidad Visual Seven Reasoons (Degradado 4 colores en bordes, CTA, Logo, WhatsApp).
+- [`.agents/standards/14_prototype_ui_components_cheatsheet.md`](./.agents/standards/14_prototype_ui_components_cheatsheet.md): Catálogo de componentes de copia y pega en Tema Claro para prototipos.
+
+---
+
+## ⚡ Suite Oficial de Skills (`reasoons-*`)
+
+Todas las habilidades y automatizaciones del holding se encuentran estandarizadas bajo el prefijo unificado `reasoons-*` en [`.agents/skills/`](file:///.agents/skills/):
+
+| Skill | Comando / Invocación | Función Principal |
+| :--- | :--- | :--- |
+| **`reasoons-pure`** | *Activa la skill reasoons-pure* | Genera prototipos de venta interactivos (<24h, Tema Claro, degradado en bordes de 2px, interior blanco sólido, botón CTA y WhatsApp oficial). |
+| **`reasoons-minimalist-ui`** | *Activa la skill reasoons-minimalist-ui* | Erradica estilos genéricos e implementa las mejores prácticas de **Google Chrome Modern Web Guidance** (tipografía editorial, micro-interacciones). |
+| **`reasoons-atomic-components`** | *Activa la skill reasoons-atomic-components* | Construye componentes en Next.js bajo **Atomic Design** (`atoms`, `molecules`, `organisms`, `templates`) con Pure UI para handoff directo a Seniors. |
+| **`reasoons-project-init`** | *Activa la skill reasoons-project-init* | Orquesta el arranque Día 0, calibrando los 6 roles y aprovisionando cualquiera de los 18 arquetipos con los scripts oficiales. |
 
 ---
 

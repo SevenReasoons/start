@@ -16,7 +16,7 @@ Write-Host ""
 # ------------------------------------------------------------------------------
 $roles = @(
   "Awareness   [Nivel 1] - Ventas & Prototipos interactivos (<24h)",
-  "Maker       [Nivel 2] - Fullstack Junior (Captacion + DB basica)",
+  "Maker       [Nivel 2] - Frontend Atómico Next.js & DB Familia 2 (Handoff a Senior)",
   "Consultant  [Nivel 3] - Fullstack Intermedio (APIs, Stripe & LMS)",
   "Architect   [Nivel 4] - Ingeniero Senior (Multi-Tenant & Multi-Agente)",
   "Expert      [Nivel 5] - Deep-Tech (IoT, Ciberseguridad & 60 FPS)",
